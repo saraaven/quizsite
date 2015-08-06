@@ -7,9 +7,8 @@ def startpage(request):
 def quiz(request):
 	return render(request, "quiz/quiz.html")
 
-def quiz(request):
+def question(request):
 	return render(request, "quiz/question.html")
 
-def quiz(request):
+def completed(request):
 	return render(request, "quiz/completed.html")
-	
