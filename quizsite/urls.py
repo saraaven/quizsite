@@ -1,5 +1,7 @@
 from django.conf.urls import url
 from quiz import views
+from django.contrib import admin
+from django.conf.urls import include
 
 urlpatterns = [
 	url("^$", views.startpage, name="start_page"),
