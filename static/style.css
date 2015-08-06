@@ -1,0 +1,21 @@
+body {
+	background: #ffcdff;
+	font: 14pt "Arial";
+	width: 600px;
+	margin: 0 auto; 
+
+}
+h1 {
+	color: #ffffff;
+	text-align: center
+}
+
+.button {
+	border-radius:300px;
+	color: #ff33cc;
+	border-width:2px;
+	border-style: solid;
+	text-decoration: none
+	width: 600px;
+	margin: 0 auto; 
+}
