@@ -16,13 +16,11 @@
 		<p>Här kan du välja vilket quiz du vill göra.<br>Välj ett quiz genom att klicka på det.</p>
 
 	<div id="quiz_meny">
-		<ul id="quiz">
-			<li><a href="quiz.html">Palma quiz</a></li>
-			<li><a href="#">Quiz 2</a></li>
-			<li><a href="#">Quiz 3</a></li>
-			<li><a href="#">Quiz 4</a></li>
-			<li><a href="#">Quiz 5</a></li>
-		</ul>
+
+		{% for quiz_slug, quiz in quizzes.items %}
+			<p>{{ quiz.name }}</p>
+		{% endfor %}
+
 	</div>
 	
 		
