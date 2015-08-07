@@ -22,10 +22,10 @@
 	<div id="quiz_meny">
 
 		{% for quiz in quizzes %}
-   	 			<p><a href="{% url "quiz_page" quiz.slug %}">
-						{{ quiz.name }}
-				</a></p>
-		{% endfor %}
+         	<p><a href="{% url "quiz_page" quiz.slug %}">
+            	{{ quiz.name }}
+        	</a></p>
+        {% endfor %}
 
 	</div>
 	
