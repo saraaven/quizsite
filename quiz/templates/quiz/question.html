@@ -14,10 +14,10 @@
 
 	<body>
 		<h1>{{ quiz.name }}</h1>
-		<h1>{{ question_number }}. {{ question }}</h1>
+		<h1>{{ question_number }}. {{ question|safe }}</h1>
 
 		<form action="{% url "question_page" quiz.slug question_number %}" method="post">
-		
+
 		<p>
 				<label>
 						<input type="radio" name="answer" value="1">

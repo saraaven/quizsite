@@ -15,12 +15,9 @@
 	<body>
 		<h1>{{ quiz.name }}</h1>
 		
-		<p>{{ quiz.description }}</p>
+		<p>{{ quiz.description|safe }}</p>
 		
-		<img src = "/static/palma.jpg"> 
-		<br>
-		
-		<p><a href="{% url "question_page" quiz.slug 1 %}" class="button" >Starta</a></p>
+		<br><p><a href="{% url "question_page" quiz.slug 1 %}" class="button" >Starta</a></p>
 
 	</body>
 

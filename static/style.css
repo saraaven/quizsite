@@ -16,6 +16,24 @@ h1 {
 	font-weight: 100;
 }
 
+h2 {
+	color: #000000;
+	text-align: center;
+	width: 600px;
+	margin: 0 auto; 
+	font-size: 28;
+	font-weight: 100;
+}
+
+p {
+	color: #000000;
+	text-align: center;
+	width: 600px;
+	margin: 0 auto; 
+	font-size: 20;
+	font-weight: 100;
+}
+
 b {
 	font-weight: bold 700;
 
@@ -24,7 +42,7 @@ b {
 .button {
 	border-radius:300px;
 	color: #ff33cc;
-	border-width:2px;
+	border-width:3px;
 	border-style: solid;
 	text-decoration: none;
 	width: 600px;

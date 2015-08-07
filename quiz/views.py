@@ -57,6 +57,7 @@ def completed(request, slug):
 	saved_answers = request.session[slug]
 
 	num_correct_answers = 0
+	
 	for counter, question in enumerate(questions):
 			if question.correct == saved_answers[str(counter + 1)]:
 					num_correct_answers += 1
