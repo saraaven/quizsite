@@ -17,16 +17,10 @@
 		
 		<p>{{ quiz.description }}</p>
 		
-		<h1>PALMA QUIZ!</h1>
-
-		<h2>Välkommen till PALMA Quizet!</h2> 
-		
 		<img src = "/static/palma.jpg"> 
 		<br>
 		
-		<p><a href="{% url "question_page" quiz.slug 1 %}">Starta</a></p>
-
-		<a href="question.html" class="button">Starta quizet!</a>
+		<p><a href="{% url "question_page" quiz.slug 1 %}" class="button" >Starta</a></p>
 
 	</body>
 

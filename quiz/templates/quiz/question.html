@@ -13,38 +13,40 @@
 	</head>
 
 	<body>
+		<h1>{{ quiz.name }}</h1>
 		<h1>{{ question_number }}. {{ question }}</h1>
-		<p>{{ answer1 }}</p>
-		<p>{{ answer2 }}</p>
-		<p>{{ answer3 }}</p>
 
-		<h1>PALMA QUIZ!</h1>
+		<p>
+				<label>
+						<input type="radio" name="answer" value="1">
+						{{ answer1 }}
+				</label>
+		</p>
 
-		<h2>Välkommen till PALMA Quizet!</h2> 
+		<p>
+				<label>
+						<input type="radio" name="answer" value="2">
+						{{ answer2 }}
+				</label>
+		</p>
+
+		<p>
+				<label>
+						<input type="radio" name="answer" value="3">
+						{{ answer3 }}
+				</label>
+		</p>
 		
+		<form action="{% url "question_page" quiz.slug question_number %}" method="post">
 
-		<h3>I vilket land ligger Palma?</h3> 
-		<img src = "palma.jpg"> 
-		<br>
-		<br>
-
-		<form>
-				<input type = "radio" name = "fråga1" value = "Spanien"> Spanien
-			<br>
-				<input type = "radio" name = "fråga1" value = "Tyskland"> Tyskland
-			<br>
-				<input type = "radio" name = "fråga1" value = "Frankrike"> Frankrike
-			<br><br>
-			
 		</form>
 
-		<p><a href="{% url "completed_page" quiz_slug %}">Nästa</a></p>
-		
-		<a href="question.html" class="button">Nästa fråga</a>
+		{% csrf_token %}
 
-		<p> 
-			Detta var sista frågan, för att komma till resultatet klicka 
-		<a href="completed.html">här</a></p>
+		<button type="submit">Nästa</button>
+		
+		<!-- <p><a href="{% url "question_page" quiz.slug question_number|add:1 %}" class="button" >Nästa</a></p> -->
+		
 
 	</body>
 
